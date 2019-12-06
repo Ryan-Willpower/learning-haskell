@@ -1,0 +1,15 @@
+-- expression               output
+-- 
+-- 1:[2,3,4]                [1,2,3,4]
+-- 1:2:3:4:[]               [1,2,3,4]
+-- [1,2,3]:[4..7]           Error: wrong input type at [1,2,3]
+-- [1,2,3] ++ [4..7]        [1,2,3,4,5,6,7]
+-- 1:['a','b']              Error: List can contain only one type
+-- "abc"++"cd"              "abccd"
+-- "a":"bCc"                Error: wrong input type at "a"
+-- "a" ++ "bCc"             "abCc"
+-- 'a':'b'                  Error: wrong input type at 'b'
+-- 'a':"b"                  "ab"
+-- [1,4,7] ++ 4:[5:[]]      Error: Wrong input type at 4:[5:[]]
+-- [True,True:[]]           Error: Wrong input type at True:[]
+-- True:[True,False]        [True, True, False]
